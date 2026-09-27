@@ -31,7 +31,11 @@ AudacityMCP connects any MCP-compatible AI assistant to [Audacity](https://www.a
 
 **If this is useful to you, a star helps other people find it** — that's the whole marketing budget for this project. Want to help keep it maintained? Click the **Sponsor** badge up top.
 
-> **Compatibility:** AudacityMCP currently works with **Audacity 3.x** only. Audacity 4.x is not yet supported — we hope to add support in the future.
+> **Compatibility:** AudacityMCP works with **Audacity 3.x**. Audacity 4 removed `mod-script-pipe` — the scripting interface this server drives — and ships no replacement, so AudacityMCP cannot control Audacity 4.
+>
+> **Running Audacity 4?** There is a companion project: **[Audacity4-MCP](https://github.com/xDarkzx/Audacity4-MCP)** — 159 tools over a TCP JSON-RPC bridge, covering editing, selection, labels, destructive and realtime effects, and live VST3 parameter control.
+>
+> It is early alpha, and worth being clear about the setup: because Audacity 4 has no remote-control interface yet, it needs a companion fork of Audacity 4 built from source (Visual Studio, Qt 6.10, CMake, Ninja). That puts it in developer territory for now rather than general use. Audacity's maintainers have confirmed an official command and MCP interface is planned once their internal migration completes; when that lands, the fork should no longer be necessary.
 
 ### Works With
 
